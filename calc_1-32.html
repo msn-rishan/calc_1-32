@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calc ver. 1.32.20251020</title>
+    
+    <link 
+      rel="stylesheet" 
+      href="calc_1-32.css">
+   
+  </head>
+  
+  <body>
+    <h2>Basic Calculator</h2>
+    
+    <div class ="screen">    
+      <div class ="info">
+        <div class ="credit">rishan's calc 1.32.20251020</div>
+        <div class ="answer"></div>
+        <div class ="mode"></div>
+      </div>
+      <div class ="display"></div>
+    </div>
+      
+    <div class ="button-container">
+      <button class ="cancel" onclick="cancellation(-10);">C</button>
+      <button onclick ="cancellation(-1);">del</button>
+      <button onclick ="operation('%');">R</button>
+      <button onclick ="operation('/');">/</button>   
+  
+      <button onclick ="numclick(7)";>7</button>
+      <button onclick ="numclick(8)";>8</button>
+      <button onclick ="numclick(9)";>9</button>
+      <button onclick ="operation('*');">*</button>
+           
+      <button onclick ="numclick(4);">4</button>
+      <button onclick ="numclick(5);">5</button>
+      <button onclick ="numclick(6);">6</button>
+      <button onclick ="operation('-');">-</button>
+           
+      <button onclick ="numclick(1);">1</button>
+      <button onclick ="numclick(2);">2</button>
+      <button onclick ="numclick(3);">3</button>
+      <button onclick ="operation('+');">+</button>
+           
+      <button onclick ="dot();">.</button>
+      <button onclick ="digit0(0);">0</button>
+      <button onclick ="minus1()">*(-1)</button>
+      <button onclick ="equal();">=</button>
+    </div>
+    
+    <script src="calc_1-32.js">
+    </script>
+  </body>
+</html>
